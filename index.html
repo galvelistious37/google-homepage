@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <style>
@@ -6,7 +7,8 @@
             }
 
             #buttonDiv{
-                width: 40%;
+                display: flex;
+                justify-content: center;
                 margin-top: 40px;
                 margin-left: auto;
                 margin-right: auto;
@@ -19,9 +21,10 @@
 
             img {
                 display: block;
-                margin: 20% auto auto auto;
+                margin: 10% auto auto auto;
                 
             }
+
             form {
                 width: 100%;
                 align-content: center;
@@ -29,7 +32,7 @@
             }
 
             input{
-                width: 62%;
+                width: 600px;
                 height: 45px;
                 display: block;
                 margin: 20px auto 5px auto;
@@ -47,11 +50,78 @@
                 margin-left: 5px;
                 margin-right: 5px;
             }
+
+            .navbar{
+                display: flex;
+                margin-top: 20px;
+                padding-left: 20px;
+            }
+
+            .leftSideNav{
+                width: 50%;
+            }
+
+            .rightSideNav{
+                width: 50%;
+                padding-right: 30px;
+            }
+
+            .rightNav{
+                float: right;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            
+            a{
+                text-decoration: none;
+                font-size: 12px;
+                padding-right: 5px;
+                margin-right: 5px;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+
+            .divFooter{
+                display: flex;
+                position: fixed;
+                padding-top: 20px;
+                padding-left: 20px;
+                bottom: 0;
+                background-color: rgb(245, 239, 239);
+                height: 50px;
+            }
+
+            .leftSideFooter{
+                width: 40%;
+                margin-left: 20px;
+            }
+
+            .centerFooter{
+                text-align: center;
+                width: 20%;
+            }
+
+            .rightSideFooter{
+                width: 40%;
+                margin-right: 30px;
+            }
+
         </style>
         <title>The Odin Project: Google Homepage</title>
     </head>
     <body>
-        <nav><p>some nav stuff</p></nav>
+        <div class="navbar">
+            <div class="leftSideNav">
+                <a href="" id="about" class="leftNav">About</a>
+                <a href="" id="store" class="leftNav">Store</a>
+            </div>
+            <div class="rightSideNav">
+                <a href="" id="images" class="rightNav">Images</a>
+                <a href="" id="gmail" class="rightNav">Gmail</a>
+            </div>
+        </div>
         <main>
             <div id="divImg">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
@@ -68,7 +138,21 @@
             </form>
         </main>
         <footer>
-            <p>some stuff</p>
+            <div class="divFooter">
+                <div class="leftSideFooter">
+                    <a href="" id="advertising" class="leftNav">Advertising</a>
+                    <a href="" id="business" class="leftNav">Business</a>
+                    <a href="" id="searchWorks" class="leftNav">How Search Works</a>
+                </div>
+                <div class="centerFooter">
+                    <a href="" id="carbonNuetral" class="centerFootLink">Carbon nuetral since 2007</a>
+                </div>
+                <div class="rightSideFooter">
+                    <a href="" id="settings" class="rightNav">Settings</a>
+                    <a href="" id="terms" class="rightNav">Terms</a>
+                    <a href="" id="privacy" class="rightNav">Privacy</a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
